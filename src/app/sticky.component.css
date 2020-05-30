@@ -105,8 +105,7 @@ textarea {
 }
 .noPadding {
   padding: 0;
-  margin: 10px;
-  
+   
 }
 .mrginright3px {
   margin-right: 3px;
@@ -119,4 +118,9 @@ textarea {
 }
 .mat-dialog-content {
   display: inline;
+}
+.sticky
+{
+  margin-right:10px;
+  border-radius:5px;
 }
