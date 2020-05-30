@@ -105,6 +105,8 @@ textarea {
 }
 .noPadding {
   padding: 0;
+  margin: 10px;
+  
 }
 .mrginright3px {
   margin-right: 3px;
