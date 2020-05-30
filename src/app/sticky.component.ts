@@ -56,7 +56,12 @@ export class StickyComponent implements OnInit {
       });
   }
   addNote(event, cssClass) {
-    let id = this.noteData.length + 1;
+    
+    var notes=[];
+     this._store.pipe(select(selectAllNotes)).subscribe((o) => {
+      notesCount = o;
+    });
+let id = notesCount.length + 1;
     this._store.dispatch(
       new fromNotes.AddNote(<Note>{
         ClassName: cssClass,
